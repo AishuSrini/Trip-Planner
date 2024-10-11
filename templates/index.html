@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner</title>
+</head>
+<body>
+    <h1>Trip Planner</h1>
+    <form method="POST" action="/plan_trip">
+        <label for="destination">Destination:</label>
+        <input type="text" id="destination" name="destination" required><br><br>
+
+        <label for="start_date">Start Date:</label>
+        <input type="date" id="start_date" name="start_date" required><br><br>
+
+        <label for="end_date">End Date:</label>
+        <input type="date" id="end_date" name="end_date" required><br><br>
+
+        <label for="preferences">Preferences (e.g., museums, nature, food):</label>
+        <input type="text" id="preferences" name="preferences"><br><br>
+
+        <button type="submit">Plan My Trip</button>
+    </form>
+</body>
+</html>

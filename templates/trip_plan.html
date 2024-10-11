@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Trip Itinerary</title>
+</head>
+<body>
+    <h1>Your Trip Itinerary</h1>
+    
+    <!-- Loop through each suggestion with its corresponding image -->
+    {% for item in suggestions_with_images %}
+        <div>
+            <p><strong>{{ item.suggestion }}</strong></p>
+            {% if item.image_url %}
+                <img src="{{ item.image_url }}" alt="Image for {{ item.suggestion }}" style="width: 400px; height: 400px;">
+            {% else %}
+                <p>No image available.</p>
+            {% endif %}
+        </div>
+        <hr>
+    {% endfor %}
+    
+    <a href="/">Plan Another Trip</a>
+</body>
+</html>

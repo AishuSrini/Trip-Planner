@@ -54,7 +54,8 @@ Access the application via http://localhost:5000.
 **Demo:**
 
 **Watch a Demo Video:**
-[Watch the demo on YouTube]https://youtu.be/DqqCbHC9MtA
+
+[Watch the demo on YouTube] https://youtu.be/DqqCbHC9MtA
 
 # **How to use:**
 
